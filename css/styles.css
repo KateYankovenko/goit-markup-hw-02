@@ -12,21 +12,32 @@
 /* features for the whole documents body */
 body {
   background-color: #ffffff;
-  color: #212121;
+  color: var(--main-text-color);
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
 }
-/* feature without side dot for all lists 
-ul {
-  list-style: none;
-}*/
+/* logo */
+.logo {
+  font-size: 26px;
+  line-height: 1.2;
+  font-family: Raleway, sans-serif;
+}
 /* site logo and logo-links features*/
 .logo:hover,
 .logo:focus,
-.nav-link:hover,
-.nav-link:focus {
-  text-decoration: none;
+.link:hover,
+.link:focus {
   color: var(--accent-color);
+  text-decoration: none;
 }
-.site-nav .nav-link-current {
+.site-nav .link,
+.contact {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.site-nav .link.current {
   color: var(--accent-color);
 }
 /* contacts hover and focus features */
@@ -37,33 +48,48 @@ ul {
 /* Button */
 .button:hover,
 .button:focus {
+  color: var(--section-text-color);
   background: var(--accent-color);
   box-shadow: var(--shadow-color);
-  color: var(--section-text-color);
-}
-.section,
-.title {
-  color: var(--main-text-color);
 }
 .hero-title {
   color: var(--section-text-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.section {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+.section-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.title {
+  color: var(--secondary-text-color);
+  font-size: 14px;
+  line-height: 1.7;
 }
 .title-item {
   color: var(--secondary-text-color);
+  font-size: 16px;
+  line-height: 1.19;
 }
 /* hero and footer bcg color */
 .hero,
 .footer {
-  background: var(--section-color);
   color: var(--section-text-color);
+  background: var(--section-color);
 }
 
-/* first section 
-.first-section,
-.footer {
-  background-color: var(--footer-color);
-  color: #ffffff;
-}*/
 /*main text color #212121*/
 /*secondary text color #757575*/
 /* page background: #E5E5E5 */
@@ -71,3 +97,8 @@ ul {
 /* footer color background: #2F303A */
 /*accent #2196F3*/
 /*footer email and tel rgba(255, 255, 255, 0.6)*/
+
+/* feature without side dot for all lists 
+ul {
+  list-style: none;
+}*/
