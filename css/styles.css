@@ -1,0 +1,73 @@
+/* declaration of main colors */
+:root {
+  --main-text-color: #212121;
+  --secondary-text-color: #757575;
+  --section-text-color: #ffffff;
+  --accent-color: #2196f3;
+  --shadow-color: rgba(31, 21, 21, 0.15);
+  --section-color: #2f303a;
+  --first-section-color: #e5e5e5;
+  --second-section-color: #f5f4fa;
+}
+/* features for the whole documents body */
+body {
+  background-color: #ffffff;
+  color: #212121;
+}
+/* feature without side dot for all lists 
+ul {
+  list-style: none;
+}*/
+/* site logo and logo-links features*/
+.logo:hover,
+.logo:focus,
+.nav-link:hover,
+.nav-link:focus {
+  text-decoration: none;
+  color: var(--accent-color);
+}
+.site-nav .nav-link-current {
+  color: var(--accent-color);
+}
+/* contacts hover and focus features */
+.contact:hover,
+.contact:focus {
+  color: var(--accent-color);
+}
+/* Button */
+.button:hover,
+.button:focus {
+  background: var(--accent-color);
+  box-shadow: var(--shadow-color);
+  color: var(--section-text-color);
+}
+.section,
+.title {
+  color: var(--main-text-color);
+}
+.hero-title {
+  color: var(--section-text-color);
+}
+.title-item {
+  color: var(--secondary-text-color);
+}
+/* hero and footer bcg color */
+.hero,
+.footer {
+  background: var(--section-color);
+  color: var(--section-text-color);
+}
+
+/* first section 
+.first-section,
+.footer {
+  background-color: var(--footer-color);
+  color: #ffffff;
+}*/
+/*main text color #212121*/
+/*secondary text color #757575*/
+/* page background: #E5E5E5 */
+/*top-line white color #FFFFFF*/
+/* footer color background: #2F303A */
+/*accent #2196F3*/
+/*footer email and tel rgba(255, 255, 255, 0.6)*/
