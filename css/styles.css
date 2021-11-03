@@ -4,10 +4,13 @@
   --secondary-text-color: #757575;
   --section-text-color: #ffffff;
   --accent-color: #2196f3;
+  --button-hover-color: #188ce8;
+  --filter-button-color: #f5f4fa;
   --shadow-color: rgba(31, 21, 21, 0.15);
   --section-color: #2f303a;
   --first-section-color: #e5e5e5;
   --second-section-color: #f5f4fa;
+  --ftr-cnt-color: rgba(255, 255, 255, 0.6);
 }
 /* features for the whole documents body */
 body {
@@ -16,11 +19,16 @@ body {
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
 }
+.list {
+  list-style: none;
+}
 /* logo */
 .logo {
+  color: var(--accent-color);
   font-size: 26px;
   line-height: 1.2;
   font-family: Raleway, sans-serif;
+  text-decoration: none;
 }
 /* site logo and logo-links features*/
 .logo:hover,
@@ -36,22 +44,60 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  text-decoration: none;
 }
 .site-nav .link.current {
   color: var(--accent-color);
 }
 /* contacts hover and focus features */
-.contact:hover,
-.contact:focus {
+.contact-header {
+  color: var(--secondary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+.contact-footer,
+.footer-addr {
+  color: var(--ftr-cnt-color);
+  font-size: 14px;
+  line-height: 1.7;
+  text-decoration: none;
+}
+
+/* actions with contacts */
+.contact-header:hover,
+.contact-header:focus,
+.contact-footer:hover,
+.contact-footer:focus {
   color: var(--accent-color);
 }
-/* Button */
+/* Buttons */
+.button {
+  color: var(--section-text-color);
+  background: var(--accent-color);
+  cursor: pointer;
+}
 .button:hover,
 .button:focus {
   color: var(--section-text-color);
-  background: var(--accent-color);
+  background: var(--button-hover-color);
   box-shadow: var(--shadow-color);
 }
+.filter-button {
+  background: var(--filter-button-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  cursor: pointer;
+}
+.filter-button:hover,
+.filter-button:focus {
+  color: var(--section-text-color);
+  background: var(--accent-color);
+}
+/* hero section */
 .hero-title {
   color: var(--section-text-color);
   font-weight: 900;
@@ -61,33 +107,64 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
+/* bcg for first section */
 .section {
+  background: var(--first-section-color);
+}
+.section-hdr {
   font-weight: bold;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
 }
+/* professional qualities */
 .section-title {
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
-  text-transform: uppercase;
 }
-.title {
+.section-depict {
   color: var(--secondary-text-color);
   font-size: 14px;
   line-height: 1.7;
 }
-.title-item {
+/* studio team */
+.section-cmd {
+  background: var(--second-section-color);
+}
+.team {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+}
+.team-item {
   color: var(--secondary-text-color);
   font-size: 16px;
   line-height: 1.19;
 }
+
 /* hero and footer bcg color */
 .hero,
 .footer {
-  color: var(--section-text-color);
   background: var(--section-color);
+}
+/* footer addres */
+.footer-addr {
+  color: var(--section-text-color);
+}
+
+/* portfolio page text features for image descriptions */
+.image-hdr {
+  color: var(--main-text-color);
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.image-depict {
+  color: var(--secondary-text-color);
+  font-size: 16px;
+  line-height: 1.87;
 }
 
 /*main text color #212121*/
@@ -97,8 +174,3 @@ body {
 /* footer color background: #2F303A */
 /*accent #2196F3*/
 /*footer email and tel rgba(255, 255, 255, 0.6)*/
-
-/* feature without side dot for all lists 
-ul {
-  list-style: none;
-}*/
