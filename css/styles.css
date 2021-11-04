@@ -25,21 +25,20 @@ body {
 /* logo */
 .logo {
   color: var(--accent-color);
+  font-family: Raleway, sans-serif;
   font-size: 26px;
   line-height: 1.2;
-  font-family: Raleway, sans-serif;
   text-decoration: none;
 }
-/* site logo and logo-links features*/
-.logo:hover,
-.logo:focus,
-.link:hover,
-.link:focus {
-  color: var(--accent-color);
-  text-decoration: none;
+.logo-accent {
+  color: var(--main-text-color);
 }
-.site-nav .link,
-.contact {
+.logo-ft-accent {
+  color: var(--section-text-color);
+}
+/* site links features*/
+.site-nav .link {
+  color: var(--main-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -48,6 +47,12 @@ body {
 }
 .site-nav .link.current {
   color: var(--accent-color);
+  text-decoration: none;
+}
+.link:hover,
+.link:focus {
+  color: var(--accent-color);
+  text-decoration: none;
 }
 /* contacts hover and focus features */
 .contact-header {
@@ -63,6 +68,7 @@ body {
   color: var(--ftr-cnt-color);
   font-size: 14px;
   line-height: 1.7;
+  font-style: normal;
   text-decoration: none;
 }
 
@@ -77,6 +83,7 @@ body {
 .button {
   color: var(--section-text-color);
   background: var(--accent-color);
+  font-family: inherit;
   cursor: pointer;
 }
 .button:hover,
@@ -87,6 +94,7 @@ body {
 }
 .filter-button {
   background: var(--filter-button-color);
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -119,9 +127,10 @@ body {
 }
 /* professional qualities */
 .section-title {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  text-transform: uppercase;
 }
 .section-depict {
   color: var(--secondary-text-color);
@@ -154,9 +163,12 @@ body {
 }
 
 /* portfolio page text features for image descriptions */
+.image {
+  text-decoration: none;
+}
 .image-hdr {
   color: var(--main-text-color);
-  font-weight: bold;
+  font-weight: 900;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
